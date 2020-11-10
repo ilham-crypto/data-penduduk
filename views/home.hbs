@@ -17,18 +17,19 @@
     <button type="submit"> TAMBAH</button>
     </form>
     <br/>
-    <table class="table table-hover">
+    <table class="table table-hover" style="text-align: center;">
         <thead>
             <tr>
-                <th "col">NIK</th>
-                <th "col">NAMA</th>
-                <th "col">ALAMAT</th>
-                <th "col">TTL</th>
-                <th "col">GOLONGAN DARAH</th>
-                <th "col">TELEPON</th>
+                <th "col-sm">NIK</th>
+                <th "col-sm">NAMA</th>
+                <th "col-sm">ALAMAT</th>
+                <th "col-sm">TTL</th>
+                <th "col-sm">GOLONGAN DARAH</th>
+                <th "col-sm">TELEPON</th>
+                <th "col-sm">AKSI</th>
             </tr>
         </thead>
-        <tbody class="table table-active">
+        <tbody class="table table-active" style="text-align: center;">
             {{#each data}}
             <tr>
                 <td>{{ NIK }}</td>
@@ -37,6 +38,7 @@
                 <td>{{ TTL }}</td>
                 <td>{{ GOLONGAN_DARAH }}</td>
                 <td>{{ TELEPON }}</td>
+                <td><a href="/hapus-NAMA/{{ NAMA }}"><button>hapus</button></a></td>
             </tr>
             {{/each}}
         </tbody>
